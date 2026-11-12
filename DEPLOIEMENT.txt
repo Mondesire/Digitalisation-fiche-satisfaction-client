@@ -1,0 +1,58 @@
+# DEPLOIEMENT AERIA - Satisfaction Client
+
+## Etapes de deploiement
+
+### 1. Acheter un nom de domaine
+- OVH, GoDaddy, Namecheap (~3-15$/an)
+
+### 2. Choisir un hebergeur
+- OVH, Hostinger, Alwaysdata (gratuit)
+- Doit supporter: PHP 8.0+, MySQL 5.7+, Apache avec mod_rewrite
+
+### 3. Upload des fichiers
+Via FTP (FileZilla) ou File Manager de l'hebergeur:
+- Uploadez TOUS les fichiers du dossier "Default Project" dans /public_html ou /www
+
+### 4. Creer la base de donnees
+Via phpMyAdmin:
+- Creez une base de donnees (ex: aeria_satisfaction)
+- Importez le fichier sql/database.sql
+- Importez sql/migration_techniciens.sql
+- Importez sql/migration_intervention.sql
+
+### 5. Modifier config.php
+Remplacez les valeurs de production:
+```php
+define('DB_HOST', 'localhost');           // garde
+define('DB_NAME', 'votre_nom_bdd');      // NOM DE VOTRE BDD
+define('DB_USER', 'votre_user_bdd');     // UTILISATEUR BDD
+define('DB_PASS', 'votre_mot_de_passe'); // MOT DE PASSE BDD
+define('SITE_URL', 'https://votre-domaine.com'); // VOTRE DOMAINE
+```
+
+### 6. Creer l'admin
+Visitez: https://votre-domaine.com/setup.php
+Puis supprimez setup.php pour la securite!
+
+### 7. Tester
+- Page publique: https://votre-domaine.com/
+- Admin: https://votre-domaine.com/admin/login.php
+- Login: identifiants definis a l etape 6
+
+## Fichiers a supprimer en production
+- setup.php (apres creation de l'admin)
+- sql/ (dossier complet)
+
+## Structure des dossiers
+```
+/public_html/
+  ├── admin/           (pages admin)
+  ├── assets/images/   (logo + images)
+  ├── css/             (styles)
+  ├── includes/        (connexion BDD + utilitaires)
+  ├── js/              (javascript)
+  ├── uploads/         (fichiers uploades)
+  ├── index.php        (page publique)
+  ├── config.php       (configuration)
+  └── .htaccess        (securite Apache)
+```

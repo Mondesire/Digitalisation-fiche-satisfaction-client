@@ -1,0 +1,9 @@
+# Configuration sensible
+config.php
+setup.php
+uploads/*
+!uploads/.gitkeep
+.DS_Store
+Thumbs.db
+assets/images/logo-aeria.svg
+assets/images/logo.jpg
