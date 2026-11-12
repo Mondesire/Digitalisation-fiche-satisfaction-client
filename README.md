@@ -70,6 +70,11 @@ Application web de collecte et de suivi des évaluations de satisfaction client,
 
 \- Les logos du projet ne sont pas inclus dans ce dépôt.
 
+## Améliorations prévues
+
+- Ajout de statistiques graphiques sur le tableau de bord
+- Notifications par email après une évaluation
+
 
 
 \## Auteur
