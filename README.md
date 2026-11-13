@@ -1,4 +1,4 @@
-\# Digitalisation de fiche de satisfaction client
+# Digitalisation de fiche de satisfaction client
 
 Projet de fin de stage réalisé chez AERIA.
 
@@ -6,69 +6,69 @@ Application web de collecte et de suivi des évaluations de satisfaction client,
 
 
 
-\## Fonctionnalités
+## Fonctionnalités
 
 
 
-\- Formulaire public de satisfaction client
+- Formulaire public de satisfaction client
 
-\- Espace administrateur sécurisé (connexion)
+- Espace administrateur sécurisé (connexion)
 
-\- Tableau de bord des évaluations
+- Tableau de bord des évaluations
 
-\- Gestion des clients et des techniciens
+- Gestion des clients et des techniciens
 
-\- Fiche détaillée par technicien
+- Fiche détaillée par technicien
 
-\- Export des données clients et techniciens
-
-
-
-\## Technologies
+- Export des données clients et techniciens
 
 
 
-\- PHP (accès base de données via PDO)
-
-\- MySQL
-
-\- HTML, CSS, JavaScript
-
-\- Apache (.htaccess : protection des dossiers sensibles, compression, cache)
+## Technologies
 
 
 
-\## Installation (en local)
+- PHP (accès base de données via PDO)
+
+- MySQL
+
+- HTML, CSS, JavaScript
+
+- Apache (.htaccess : protection des dossiers sensibles, compression, cache)
 
 
 
-1\. Cloner le dépôt dans le dossier de votre serveur local (WAMP, XAMPP...)
-
-2\. Créer une base de données MySQL, puis importer dans cet ordre :
-
-&#x20;  - `sql/database.sql`
-
-&#x20;  - `sql/migration\_techniciens.sql`
-
-&#x20;  - `sql/migration\_intervention.sql`
-
-&#x20;  - `sql/migration\_date\_travaux.sql`
-
-3\. Copier `config.example.php` en `config.php` et renseigner vos paramètres de base de données
-
-4\. Copier `setup.example.php` en `setup.php`, renseigner vos identifiants administrateur, puis ouvrir `/setup.php` dans le navigateur pour créer le compte admin
-
-5\. Supprimer `setup.php` après utilisation
+## Installation (en local)
 
 
 
-\## Notes
+1. Cloner le dépôt dans le dossier de votre serveur local (WAMP, XAMPP...)
+
+2. Créer une base de données MySQL, puis importer dans cet ordre :
+
+   - `sql/database.sql`
+
+   - `sql/migration_techniciens.sql`
+
+   - `sql/migration_intervention.sql`
+
+   - `sql/migration_date_travaux.sql`
+
+3. Copier `config.example.php` en `config.php` et renseigner vos paramètres de base de données
+
+4. Copier `setup.example.php` en `setup.php`, renseigner vos identifiants administrateur, puis ouvrir `/setup.php` dans le navigateur pour créer le compte admin
+
+5. Supprimer `setup.php` après utilisation
 
 
 
-\- Les fichiers `config.php` et `setup.php` ne sont pas versionnés (identifiants).
+## Notes
 
-\- Les logos du projet ne sont pas inclus dans ce dépôt.
+
+
+- Les fichiers `config.php` et `setup.php` ne sont pas versionnés (identifiants).
+
+- Les logos du projet ne sont pas inclus dans ce dépôt.
 
 ## Améliorations prévues
 
@@ -77,7 +77,7 @@ Application web de collecte et de suivi des évaluations de satisfaction client,
 
 
 
-\## Auteur
+## Auteur
 
 
 
