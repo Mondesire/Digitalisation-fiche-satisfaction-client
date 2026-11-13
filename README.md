@@ -1,6 +1,6 @@
 \# Digitalisation de fiche de satisfaction client
 
-
+Projet de fin de stage réalisé chez AERIA.
 
 Application web de collecte et de suivi des évaluations de satisfaction client, avec un espace d'administration pour exploiter les résultats.
 
