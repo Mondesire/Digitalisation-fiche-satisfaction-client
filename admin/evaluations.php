@@ -5,6 +5,7 @@ requireLogin();
 $db = getDB();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+    requireAdmin();
     if (!isset($_POST[CSRF_TOKEN_NAME]) || !verifyCSRF($_POST[CSRF_TOKEN_NAME])) {
         die('Token de securite invalide.');
     }

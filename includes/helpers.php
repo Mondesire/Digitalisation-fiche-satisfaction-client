@@ -14,6 +14,17 @@ function requireLogin() {
     }
 }
 
+function isAdmin() {
+    return ($_SESSION['user_role'] ?? '') === 'admin';
+}
+
+function requireAdmin() {
+    if (!isAdmin()) {
+        http_response_code(403);
+        exit('Action reservee aux administrateurs.');
+    }
+}
+
 function generateCSRF() {
     if (empty($_SESSION[CSRF_TOKEN_NAME])) {
         $_SESSION[CSRF_TOKEN_NAME] = bin2hex(random_bytes(32));
