@@ -4,7 +4,7 @@ $isProduction = ($_SERVER['SERVER_NAME'] ?? '') !== 'localhost';
 define('DB_HOST', $isProduction ? 'localhost' : 'localhost');
 define('DB_NAME', $isProduction ? 'votre_nom_bdd' : 'satisfaction_client');
 define('DB_USER', $isProduction ? 'votre_user_bdd' : 'root');
-define('DB_PASS', $isProduction ? 'Mondesire' : '');
+define('DB_PASS', $isProduction ? 'votre_mot_de_passe' : '');
 define('DB_CHARSET', 'utf8mb4');
 
 define('SITE_NAME', 'AERIA - Gestion de Satisfaction Client');

@@ -53,6 +53,7 @@ Application web de collecte et de suivi des évaluations de satisfaction client,
    - `sql/migration_intervention.sql`
 
    - `sql/migration_date_travaux.sql`
+   - `sql/migration_service.sql`
 
 3. Copier `config.example.php` en `config.php` et renseigner vos paramètres de base de données
 
@@ -83,3 +84,7 @@ Application web de collecte et de suivi des évaluations de satisfaction client,
 
 Yao Kouadio Mondésire Joël
 
+
+## Démo en ligne
+
+https://satisfaction-mondesire.alwaysdata.net
