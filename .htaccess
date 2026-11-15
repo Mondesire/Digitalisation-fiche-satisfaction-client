@@ -28,3 +28,6 @@ RewriteEngine On
     ExpiresByType text/css "access plus 1 week"
     ExpiresByType application/javascript "access plus 1 week"
 </IfModule>
+
+# Bloquer l acces au dossier .git
+RedirectMatch 404 /\.git

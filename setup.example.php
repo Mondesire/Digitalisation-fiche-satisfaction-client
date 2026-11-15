@@ -3,7 +3,7 @@ require_once __DIR__ . '/includes/init.php';
 
 $email = 'mondesire@example.com';
 $nom = 'Admin';
-$plain_password = 'Mondesire';
+$plain_password = 'votre_mot_de_passe';
 $role = 'admin';
 $hash = password_hash($plain_password, PASSWORD_BCRYPT);
 

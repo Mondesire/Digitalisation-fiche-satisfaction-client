@@ -19,11 +19,13 @@ Via phpMyAdmin:
 - Importez le fichier sql/database.sql
 - Importez sql/migration_techniciens.sql
 - Importez sql/migration_intervention.sql
+- Importez sql/migration_date_travaux.sql
+- Importez sql/migration_service.sql
 
 ### 5. Modifier config.php
 Remplacez les valeurs de production:
 ```php
-define('DB_HOST', 'localhost');           // garde
+define('DB_HOST', 'hote_mysql_de_l_hebergeur'); // voir la page MySQL de l'hebergeur
 define('DB_NAME', 'votre_nom_bdd');      // NOM DE VOTRE BDD
 define('DB_USER', 'votre_user_bdd');     // UTILISATEUR BDD
 define('DB_PASS', 'votre_mot_de_passe'); // MOT DE PASSE BDD
